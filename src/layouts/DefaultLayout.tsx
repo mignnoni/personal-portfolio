@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom";
 
 export function DefaultLayout() {
     return (
-        <Flex minH={'100vh'} minW={'100vw'}>
-            <Flex w="100%" my={12} minW={1000} mx="auto" maxW={1000} align={'center'} flexDir={'column'}>
+        <Flex minH={'100vh'}>
+            <Flex w='full' my={12} mx="auto" maxW={900} px={[8, 8, 8, 0]} align={'center'} flexDir={'column'}>
                 <Header />
                 <Outlet />
             </Flex>
