@@ -1,6 +1,6 @@
 import { Flex, Heading, Image, Stack } from "@chakra-ui/react";
 import { Intro } from "../components/Intro";
-import { Technologies } from "../components/Technologies";
+import { Technologies } from "../components/Technologies/Technologies";
 
 export function Home() {
     return (

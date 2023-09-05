@@ -4,7 +4,7 @@ export const theme = extendTheme({
     styles: {
         global: {
             body: {
-                bg: 'gray.800',
+                bgGradient: 'linear(to-b, gray.700 60%, purple.800)',
                 color: 'white',
                 a: {
                     cursor: 'pointer',
