@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import { FiveStarsIcon } from "../FiveStarsIcon";
 
 interface TechnologyProps {
