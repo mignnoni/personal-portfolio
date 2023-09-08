@@ -2,6 +2,7 @@ import { Flex, Heading, Image, Stack } from "@chakra-ui/react";
 import { Intro } from "../components/Intro";
 import { Technologies } from "../components/Technologies/Technologies";
 import { Experiences } from "../components/Experiences/Experiences";
+import { Projects } from "../components/Projects/Projects";
 
 export function Home() {
     return (
@@ -26,6 +27,8 @@ export function Home() {
             <Technologies />
             <Heading as='h2'>Experiência</Heading>
             <Experiences />
+            <Heading as='h2'>Projetos</Heading>
+            <Projects />
         </Stack>
     );
 }
