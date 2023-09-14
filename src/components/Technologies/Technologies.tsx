@@ -1,13 +1,18 @@
-import { SimpleGrid } from "@chakra-ui/react";
-import { Technology } from "./Technology";
+import { Box, Button, Flex, useDisclosure } from "@chakra-ui/react";
+import { Slide } from "../Slide";
+import { TechnologiesModal } from "./TechnologiesModal";
 
 export function Technologies() {
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+
     return (
-        <SimpleGrid minChildWidth={40} spacing={[4, 12]}>
-            <Technology rating={5} name=".NET" imagePath={'csharp.png'} />
-            <Technology rating={5} name="React" imagePath={'react.png'} />
-            <Technology rating={5} name="Angular" imagePath={'angular.svg'} />
-            <Technology rating={4} name="Next.js" imagePath={'next.png'} />
-        </SimpleGrid>
+        <Box>
+            <Slide />
+            <Flex w='full' align={'center'} justify={'center'} mt={4}>
+                <Button colorScheme="purple" rounded={'full'} onClick={onOpen}>Ver todas</Button>
+            </Flex>
+            <TechnologiesModal onClose={onClose} isOpen={isOpen} />
+        </Box>
     );
 }

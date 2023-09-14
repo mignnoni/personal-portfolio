@@ -10,6 +10,7 @@ interface FiveStarsIconProps {
 
 export function FiveStarsIcon(props: FiveStarsIconProps) {
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [ icons, ] = useState<any[]>(() => {
 
         const filledStars = props.numberFilled;
@@ -29,7 +30,7 @@ export function FiveStarsIcon(props: FiveStarsIconProps) {
     });
 
     return (
-        <Box>
+        <Box color={'yellow.300'}>
             {icons}
         </Box>
     );
