@@ -5,6 +5,8 @@ export interface IProject {
     name: string;
     period: string;
     tags: string[];
+    videoRef?: string | null;
+    images?: string[] | null;
 }
 
 export interface IProjectProps {
@@ -12,4 +14,6 @@ export interface IProjectProps {
     name: string;
     period: string;
     tags: string[];
+    videoRef?: string | null;
+    images?: string[] | null;
 }

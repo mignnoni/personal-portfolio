@@ -1,33 +1,14 @@
 import { Flex, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Stack, Text } from "@chakra-ui/react";
 import { FiveStarsIcon } from "../FiveStarsIcon";
+import { ITechnology } from "../../interfaces/ITechnology";
 
 interface TechnologiesModalProps {
     onClose: () => void;
     isOpen: boolean;
+    technologies: ITechnology[];
 }
 
-interface Technology {
-    name: string;
-    rating: number;
-}
-
-const technologies: Technology[] = [
-    { name: '.NET', rating: 5 },
-    { name: 'React', rating: 5 },
-    { name: 'Angular / Angularjs', rating: 5 },
-    { name: 'SQL Server | MySQL', rating: 5},
-    { name: 'Typescript', rating: 5 },
-    { name: 'REST API', rating: 5 },
-    { name: 'Next.js', rating: 4 },
-    { name: 'Azure Service Bus', rating: 4 },
-    { name: 'SignalR', rating: 4 },
-    { name: 'Tailwind', rating: 4},
-    { name: 'MongoDB', rating: 3 },
-    { name: 'Docker', rating: 3 },
-    { name: 'Node.js', rating: 3 }
-]
-
-export function TechnologiesModal({ onClose, isOpen }: TechnologiesModalProps) {
+export function TechnologiesModal({ onClose, isOpen, technologies }: TechnologiesModalProps) {
     return (
         <Modal isOpen={isOpen} onClose={onClose} isCentered={true} size={'sm'}>
             <ModalOverlay />

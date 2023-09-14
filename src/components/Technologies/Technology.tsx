@@ -1,13 +1,8 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import { FiveStarsIcon } from "../FiveStarsIcon";
+import { ITechnology } from "../../interfaces/ITechnology";
 
-interface TechnologyProps {
-    name: string;
-    imagePath: string;
-    rating: number;
-}
-
-export function Technology(props: TechnologyProps) {
+export function Technology({ imagePath, name, rating }: ITechnology) {
 
 
     return (
@@ -17,7 +12,7 @@ export function Technology(props: TechnologyProps) {
                 zIndex={2}
                 w='full'
                 h={'full'}
-                bgImage={props.imagePath}
+                bgImage={imagePath ?? ''}
                 bgPos={'center'}
                 bgRepeat={'no-repeat'}
                 bgSize={'contain'}
@@ -25,9 +20,9 @@ export function Technology(props: TechnologyProps) {
             >
             </Box>
             <Box pos={'absolute'} zIndex={1} opacity={100} textAlign={'center'}  >
-                <Heading>{props.name}</Heading>
+                <Heading>{name}</Heading>
                 <Box color={'yellow.300'}>
-                    {<FiveStarsIcon numberFilled={props.rating} />}
+                    {<FiveStarsIcon numberFilled={rating} />}
                 </Box>
             </Box>
         </Flex>
