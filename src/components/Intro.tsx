@@ -1,7 +1,15 @@
 import { Box, Flex, HStack, Circle, Stack, Highlight, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 
 export function Intro() {
+
+    const { t } = useTranslation();
+
+    const query = t('aboutMe', { returnObjects: true})
+
+    console.log(query);
+
     return (
         <Flex
         flexDir={'column'}
@@ -26,7 +34,7 @@ export function Intro() {
                 Desde 2020 venho estudando, desenvolvendo projetos pessoais e aplicações web completas para usuários e empresas.
             </Text>
             <Text>
-                Atualmente estou cursando pós-graduação em Engenharia de Software na Unisinos. (2023 - 2024)
+                Atualmente estou cursando <Text as='span' color={'purple.300'}>pós-graduação em Engenharia de Software</Text> na Unisinos. (2023 - 2024)
             </Text>
             <Text>
                 <Highlight query={['.NET', 'Angular', 'React']} styles={{ color: 'purple.300' }}>

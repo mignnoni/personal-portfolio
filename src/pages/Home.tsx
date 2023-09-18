@@ -4,6 +4,7 @@ import { Intro } from "../components/Intro";
 import { Experiences } from "../components/Experiences/Experiences";
 import { Projects } from "../components/Projects/Projects";
 import { Technologies } from "../components/Technologies/Technologies";
+import { Translator } from "../components/I18n/Translator";
 
 export function Home() {
     return (
@@ -15,9 +16,9 @@ export function Home() {
                 align={['center', 'initial']}
             >
                 <Stack textAlign={['center', 'initial']}>
-                    <Heading>Olá!</Heading>
-                    <Heading as='h1'>Sou o Iuri Mignoni,</Heading>
-                    <Heading as='h2' color={'purple.300'}>Desenvolvedor Web Full Stack</Heading>
+                    <Heading><Translator path="headline.hi" /></Heading>
+                    <Heading as='h1'><Translator path="headline.me" /> Iuri Mignoni,</Heading>
+                    <Heading as='h2' color={'purple.300'}><Translator path="headline.role" /></Heading>
                 </Stack>
                 <Flex align={'center'} mb={[4, 0]}>
                     <Image w={['80px', '120px']} src={'/code_icon.png'} />
