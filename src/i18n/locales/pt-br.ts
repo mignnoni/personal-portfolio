@@ -19,7 +19,7 @@ export default {
             },
             {
                 text: `Atualmente estou cursando pós-graduação em Engenharia de Software na Unisinos. (2023 - 2024)`,
-                highlights: ['pós-graduação em Engenharia de Software'],
+                highlights: ['pós-graduação em', 'Engenharia de Software'],
                 highlightStyle: { color: 'purple.300' }
             },
             {

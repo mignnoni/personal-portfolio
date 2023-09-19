@@ -20,7 +20,7 @@ export function Home() {
                     <Heading as='h1'><Translator path="headline.me" /> Iuri Mignoni,</Heading>
                     <Heading as='h2' color={'purple.300'}><Translator path="headline.role" /></Heading>
                 </Stack>
-                <Flex align={'center'} mb={[4, 0]}>
+                <Flex align={'center'} justify={'flex-end'} mb={[4, 0]}>
                     <Image w={['80px', '120px']} src={'/code_icon.png'} />
                 </Flex>
             </Flex>

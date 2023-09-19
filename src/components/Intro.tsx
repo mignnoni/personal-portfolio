@@ -35,7 +35,7 @@ export function Intro() {
         </Flex>
         <Stack spacing={4} p={6}>
             {introBody.map((el, index) => (
-                <Text key={index}>
+                <Text key={index} wordBreak={'break-word'}>
                     <Highlight query={el.highlights ?? ''} styles={el?.highlightStyle}>
                         {el.text}
                     </Highlight>

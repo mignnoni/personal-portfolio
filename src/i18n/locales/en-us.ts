@@ -19,7 +19,7 @@ export default {
             },
             {
                 text: `Currently, I am pursuing a postgraduate degree in Software Engineering at Unisinos (2023 - 2024).`,
-                highlights: ['postgraduate degree in Software Engineering'],
+                highlights: ['postgraduate', 'degree in', 'Software Engineering'],
                 highlightStyle: { color: 'purple.300' }
             },
             {
