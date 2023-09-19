@@ -2,6 +2,7 @@ import { Box, Button, Flex, useDisclosure } from "@chakra-ui/react";
 import { SlideTechnologies } from "./SlideTechnologies";
 import { TechnologiesModal } from "./TechnologiesModal";
 import { ITechnology } from "../../interfaces/ITechnology";
+import { Translator } from "../I18n/Translator";
 
 const technologies: ITechnology[] = [
     { name: '.NET', rating: 5, imagePath: 'csharp.png' },
@@ -28,7 +29,9 @@ export function Technologies() {
         <Box>
             <SlideTechnologies technologies={technologies} />
             <Flex w='full' align={'center'} justify={'center'} mt={4}>
-                <Button colorScheme="purple" rounded={'full'} onClick={onOpen}>Ver todas</Button>
+                <Button colorScheme="purple" rounded={'full'} onClick={onOpen}>
+                    <Translator path="technologies.seeAll" />
+                </Button>
             </Flex>
             <TechnologiesModal onClose={onClose} isOpen={isOpen} technologies={technologies} />
         </Box>

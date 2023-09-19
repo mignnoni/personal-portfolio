@@ -2,46 +2,43 @@ import { Stack } from "@chakra-ui/react";
 import { Project } from "./Project";
 import { Description } from "./Description";
 import { IProject } from "../../interfaces/IProject";
+import { useTranslation } from "react-i18next";
 
-const psiCalendarProps: IProject = {
-    name: 'PsiCalendar',
-    period: '2022 - Presente',
-    tags : ['.NET', 'React', 'Next.js', 'Chakra UI', 'MySQL', 'EF Core', 'Docker', 'Vercel'],
-    paragraphs: [
-        `O PsiCalendar é uma aplicação web projetada para profissionais que atuam na área de psicologia clínica.
-        Ele oferece uma maneira eficaz de gerenciar todas as facetas do negócio, desde o agendamento de consultas até o acompanhamento financeiro.`,
-
-        `Os profissionais podem facilmente agendar e acompanhar consultas, visualizar uma agenda semanal intuitiva,
-        gerar evoluções de consultas para pacientes e criar recibos de pagamento. Além disso, a aplicação fornece uma visão geral abrangente de faltas, 
-        pagamentos e valores a receber, permitindo que os profissionais mantenham um controle preciso de suas práticas clínicas.
-        `,
-
-        `A aplicação foi desenvolvida principalmente com as tecnologias listadas abaixo, e atualmente já está sendo utilizada por profissionais da área.
-        `
-   ],
-   videoRef: 'videositepsicalendar.mp4'
+interface ProjectTranslationProps {
+    name: string;
+    period: string;
+    tags: string[];
+    description: string[];
 }
 
-const comparerProps: IProject = {
-    name: 'Comparador',
-    period: '2023',
-    tags : ['.NET', 'React', 'Electron', 'Windows Services', 'Chakra UI', 'ExcelJS'],
-    paragraphs: [
-        `O Comparador foi desenvolvido sob medida para atender às necessidades específicas de uma empresa de contabilidade. 
-        A aplicação realiza a importação de arquivos gerados por outro sistema contábil e, a partir da leitura desses arquivos, 
-        permite a aplicação de diversos filtros personalizáveis de acordo com as necessidades dos usuários.`,
-
-        `Além disso, a aplicação oferece a flexibilidade de gerar relatórios em formato de planilha ou diretamente em PDF.
-        `,
-
-        `Para que a aplicação fosse utilizada no desktop e ainda tivesse uma interface amigável, foi utilizado o Electron para o front-end, 
-        e o back-end como um serviço do Windows.
-        `
-   ],
-   images: ['comparer001.png', 'comparer002.png', 'comparer003.png', 'comparer004.png', 'comparer005.png']
+interface CurrentProjects {
+    psiCalendar: ProjectTranslationProps;
+    comparer: ProjectTranslationProps;
 }
+
 
 export function Projects() {
+
+    const { t } = useTranslation();
+    const projectTranslation = t('projects', { returnObjects: true }) as CurrentProjects;
+
+    const psiCalendarProps: IProject = {
+        name: projectTranslation.psiCalendar.name,
+        period: projectTranslation.psiCalendar.period,
+        tags : projectTranslation.psiCalendar.tags,
+        paragraphs: projectTranslation.psiCalendar.description,
+        videoRef: 'videositepsicalendar.mp4'
+    }
+    
+    const comparerProps: IProject = {
+        name: projectTranslation.comparer.name,
+        period: projectTranslation.comparer.period,
+        tags : projectTranslation.comparer.tags,
+        paragraphs: projectTranslation.comparer.description,
+        images: ['comparer001.png', 'comparer002.png', 'comparer003.png', 'comparer004.png', 'comparer005.png']
+    }
+
+
     return (
         <Stack spacing={10}>
             <Project

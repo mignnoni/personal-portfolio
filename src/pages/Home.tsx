@@ -25,11 +25,11 @@ export function Home() {
                 </Flex>
             </Flex>
             <Intro />
-            <Heading as='h2' id='technologies'>Tecnologias</Heading>
+            <Heading as='h2' id='technologies'><Translator path="header.technologies" /></Heading>
             <Technologies />
-            <Heading as='h2' id='experience'>Experiência</Heading>
+            <Heading as='h2' id='experience'><Translator path="header.experience" /></Heading>
             <Experiences />
-            <Heading as='h2' id='projects'>Projetos</Heading>
+            <Heading as='h2' id='projects'><Translator path="header.projects" /></Heading>
             <Projects />
         </Stack>
     );
