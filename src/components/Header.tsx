@@ -1,4 +1,4 @@
-import { Button, Flex, HStack, Icon, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
+import { Flex, HStack, Icon, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import { Translator } from "./I18n/Translator";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
