@@ -21,4 +21,5 @@ export function SidebarDrawerProvider({ children }: SidebarDrawerProviderProps) 
     );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useSidebarDrawer = () => useContext(SidebarDrawerContext);

@@ -5,6 +5,9 @@ export default {
             projects: 'Projects',
             technologies: 'Technologies'
         },
+        sidebar: {
+            title: 'Navigation'
+        },
         headline: {
             hi: 'Hi!',
             me: `I'm`,

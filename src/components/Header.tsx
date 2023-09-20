@@ -2,8 +2,11 @@ import { Flex, HStack, Icon, IconButton, Text, useBreakpointValue } from "@chakr
 import { Translator } from "./I18n/Translator";
 import { LanguageSelector } from "./I18n/LanguageSelector";
 import { RiMenuLine } from "react-icons/ri";
+import { useSidebarDrawer } from "../contexts/SidebarDrawerContext";
 
 export function Header() {
+
+    const { onOpen } = useSidebarDrawer();
 
     const isWideVersion = useBreakpointValue({
         base: false,
@@ -20,6 +23,7 @@ export function Header() {
                         fontSize="24"
                         variant={"unstyled"}
                         mr="2"
+                        onClick={onOpen}
                     >
                     </IconButton>
                 )}

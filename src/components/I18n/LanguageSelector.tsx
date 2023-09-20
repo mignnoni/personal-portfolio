@@ -8,7 +8,6 @@ export function LanguageSelector() {
     const { i18n } = useTranslation();
 
     const [ language, setLanguage ] = useState<string>(() => {
-        console.log(i18n.language);
         return i18n.language;
     });
 
