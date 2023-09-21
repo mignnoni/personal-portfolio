@@ -12,7 +12,7 @@ export function Project({ children, name, period, tags, videoRef, images }: IPro
     const playerRef = useRef(null);
 
     const videoJsOptions = {
-        autoplay: true,
+        autoplay: false,
         controls: true,
         responsive: true,
         fluid: true,

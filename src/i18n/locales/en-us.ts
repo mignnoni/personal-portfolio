@@ -26,14 +26,14 @@ export default {
                 highlightStyle: { color: 'purple.300' }
             },
             {
-                text: `The main technologies I master are .NET, Angular, and React, and I have a strong knowledge of relational databases, 
+                text: `The main technologies I master are .NET, Angular and React, and I have a strong knowledge of relational databases, 
                 although I also work with NoSQL.`,
                 highlights: ['.NET', 'Angular', 'React'],
                 highlightStyle: { color: 'purple.300' }
             },
             {
                 text: `Some additional useful information about me: I'm 26 years old, I speak fluent English (or close to it), 
-                I enjoy traveling, going out with my girlfriend and friends, watching sports in general (especially soccer and basketball), 
+                I enjoy traveling, going out with my girlfriend and friends, watching sports in general (especially football and basketball), 
                 I like watching sitcoms and Twitch streams, and I also enjoy having that daily cup (or cups) of coffee!`,
                 highlights: ['useful', '(or cups)'],
                 highlightStyle: { textDecoration: 'line-through', color: 'purple.300' }
