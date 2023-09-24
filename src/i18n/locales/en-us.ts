@@ -48,9 +48,11 @@ export default {
                 company: 'Sirros IoT',
                 period: '2022 - Present',
                 description: [
-                    `Development and maintenance of robust and scalable web applications, primarily using .NET, Angular, and Angularjs technologies.`,
-                    `Implementation of Background Services in .NET for utilizing queue/messaging services with Azure Service Bus, 
-                    websockets with SignalR, among others.`
+                    `I work on the development and maintenance of robust and scalable web applications, both on the front-end and back-end, 
+                    primarily using technologies such as .NET, Angular, and AngularJS.`,
+                    `I have expertise in implementing Background Services in .NET for utilizing queue/messaging services 
+                    with Azure Service Bus, as well as websockets with SignalR, among others.`,
+                     `Initially I worked on an ERP project. Currently, I'm involved in projects that encompass football stadium management and virtual queue management.`
                 ]
             }
         },

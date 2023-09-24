@@ -22,7 +22,7 @@ export function LanguageSelector() {
     return (
         <Menu size={'sm'}>
             <MenuButton
-                px={4}
+                px={[3, 4]}
                 py={2}
                 transition='all 0.2s'
                 borderRadius='md'

@@ -14,7 +14,7 @@ export function Header() {
     })
 
     return (
-        <Flex as='header' flexDir={'row'} justify={'space-between'} w="full">
+        <Flex as='header' flexDir={'row'} justify={'space-between'} align={'center'} pb={3} w="full">
             <Flex flex="1">
                 {!isWideVersion && (
                     <IconButton
@@ -38,7 +38,7 @@ export function Header() {
                     </HStack>
                 )}
             </Flex>
-            <Flex flex="4" as="header" justify={'center'} scrollBehavior={'smooth'}>
+            <Flex flex={[1, 4]} as="header" justify={'center'} scrollBehavior={'smooth'}>
                 {isWideVersion && (
                     <HStack spacing={[8, 12, 24]} fontSize={['lg', 'xl']}>
                         <Text as='a' href="#experience" _hover={{ color: 'purple.400' }}>
@@ -52,8 +52,18 @@ export function Header() {
                         </Text>
                     </HStack>
                 )}
+                {!isWideVersion && (
+                    <HStack spacing={4}>
+                        <Flex as='a' target="_blank" href={'https://www.linkedin.com/in/iuri-mignoni/'}>
+                            <Icon as={RiLinkedinBoxFill} fontSize={'2xl'}/>
+                        </Flex>
+                        <Flex as='a' target="_blank" href={'https://github.com/mignnoni'}>
+                            <Icon as={RiGithubFill} fontSize={'2xl'} />
+                        </Flex>
+                    </HStack>
+                )}
             </Flex>
-            <Flex flex="1" justify={'flex-end'} mr={1}>
+            <Flex flex={1} justify={'flex-end'} mr={[0, 1]}>
                 <LanguageSelector />
             </Flex>
         </Flex>

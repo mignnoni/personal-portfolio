@@ -20,7 +20,7 @@ export function Experiences() {
                 company={experienceSirros.company}
                 period={experienceSirros.period}
                 description={experienceSirros.description}
-                technologies={['.NET', 'Angular', 'Angularjs', 'Typescript', 'Azure Service Bus', 'SignalR', 'Background Services',
+                technologies={['.NET', 'Angular', 'AngularJS', 'Typescript', 'Azure Service Bus', 'SignalR', 'Background Services',
             'SQL Server', 'MongoDB', 'Tailwind', 'Material UI']}
             />
         </Box>

@@ -48,9 +48,11 @@ export default {
                 company: 'Sirros IoT',
                 period: '2022 - Presente',
                 description: [
-                    `Desenvolvimento e manutenção de aplicações web robustas e escaláveis, principalmente com as tecnologias .NET, Angular e Angularjs.`,
-                    `Implementação de Background Services no .NET para utilização serviços de fila / mensageria com o Azure Service Bus,
-                     websockets com o SignalR, entre outros.`
+                    `Atuo no desenvolvimento e manutenção de aplicações web robustas e escaláveis, tanto no front-end quanto no back-end,
+                     principalmente com as tecnologias .NET, Angular e Angularjs.`,
+                    `Possuo conhecimento na implementação de Background Services no .NET para utilização serviços de fila / mensageria com o Azure Service Bus,
+                     websockets com o SignalR, entre outros.`,
+                     `Inicialmente, atuei em um projeto de ERP. Atualmente, estou envolvido em projetos que envolvem a gestão de estádios de futebol e também de fila virtual.`
                 ]
             }
         },

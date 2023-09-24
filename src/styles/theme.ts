@@ -7,7 +7,7 @@ export const theme = extendTheme({
                 scrollBehavior: 'smooth'
             },
             body: {
-                bgGradient: 'linear(to-b, gray.700 60%, purple.800)',
+                bgGradient: 'linear(to-b, gray.700, purple.800)',
                 color: 'white',
                 a: {
                     cursor: 'pointer',
