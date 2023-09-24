@@ -7,7 +7,13 @@ interface TranslatorProps {
 
 export function Translator({ path }: TranslatorProps): string {
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+
+  return t(path)
+}
+
+export function GetTranslation(path: string) {
+  const { t } = useTranslation();
 
   return t(path)
 }
